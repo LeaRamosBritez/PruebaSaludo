@@ -36,4 +36,11 @@ public class HelloWorldControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().string("hola mundo"));
     }
+
+    @Test
+    public void testDespedida() throws Exception {
+        mockMvc.perform(get("/despedida"))
+                .andExpect(status().isOk())
+                .andExpect(content().string("adios!"));
+    }
 }

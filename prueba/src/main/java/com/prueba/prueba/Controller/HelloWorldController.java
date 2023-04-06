@@ -15,4 +15,9 @@ public class HelloWorldController {
     public String helloWorld() {
         return "hola mundo";
     }
+
+    @GetMapping("/despedida")
+    public String despedida() {
+        return "adios!";
+    }
 }
